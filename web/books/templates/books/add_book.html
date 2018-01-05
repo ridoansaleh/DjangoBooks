@@ -1,6 +1,6 @@
 {% extends 'books/base.html' %}
 {% block body %}
-    <form method="POST" action="update/{{ members.id }}">
+    <form method="POST" action="create">
         {% csrf_token %}
         <div class="form-group">
             <label for="firstname">Book Title</label>

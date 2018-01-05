@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'books/index.html', context)
  
 def create(request):
-    book = Books(book_title=request.POST['book_title'], writer=request.POST['witer'], 
+    book = Books(book_title=request.POST['book_title'], writer=request.POST['writer'], 
                 synopsis=request.POST['synopsis'], publisher=request.POST['publisher'], 
                 publish_date=request.POST['publish_date'])
     book.save()
